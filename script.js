@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Sample recipe data - in a real app, this would come from a database or API
     const recipes = {
         1: {
             title: "Rajma Chawal",
@@ -379,6 +378,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
 
+    // Category filtering functionality
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const recipeCards = document.querySelectorAll('.recipe-card');
+    
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get selected category
+            const selectedCategory = this.getAttribute('data-category');
+            
+            // Show all recipes if 'all' is selected, otherwise filter
+            recipeCards.forEach(card => {
+                const cardCategories = card.getAttribute('data-category').split(' ');
+                if (selectedCategory === 'all' || cardCategories.includes(selectedCategory)) {
+                    card.style.display = '';
+                    // Add a nice fade-in effect
+                    card.style.opacity = '0';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                    }, 50);
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
     // Get all view recipe buttons
     const viewButtons = document.querySelectorAll('.view-recipe');
     const modal = document.getElementById('recipeModal');
@@ -476,5 +507,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add after recipe 3 definition (around line 96)
+
     

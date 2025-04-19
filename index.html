@@ -29,12 +29,12 @@
 
   <!-- Categories -->
   <div class="categories">
-    <button class="category-btn active">All Recipes</button>
-    <button class="category-btn">Vegan</button>
-    <button class="category-btn">Dessert</button>
-    <button class="category-btn">Quick Meals</button>
-    <button class="category-btn">Indian</button>
-    <button class="category-btn">Italian</button>
+    <button class="category-btn active" data-category="all">All Recipes</button>
+    <button class="category-btn" data-category="vegan">Vegan</button>
+    <button class="category-btn" data-category="dessert">Dessert</button>
+    <button class="category-btn" data-category="quick-meals">Quick Meals</button>
+    <button class="category-btn" data-category="indian">Indian</button>
+    <button class="category-btn" data-category="italian">Italian</button>
   </div>
 
   <!-- Main Content -->
@@ -42,7 +42,7 @@
     <div class="recipe-grid">
      <!--Indian-->
 
-<div class="recipe-card" data-id="1">
+<div class="recipe-card" data-id="1" data-category="indian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://th.bing.com/th/id/OIP.D6vSLSOGd8OR4ak510OE3QHaE6?w=283&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Rajma Chawal">
   <div class="card-content">
@@ -54,7 +54,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="2">
+<div class="recipe-card" data-id="2" data-category="indian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-featured.jpg" alt="Palak Paneer">
   <div class="card-content">
@@ -66,7 +66,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="3">
+<div class="recipe-card" data-id="3" data-category="indian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://3.bp.blogspot.com/-uck7Fi_bRfw/UA7ogu0DrzI/AAAAAAAARSI/rmu9iluFJG0/s1600/cb+ten.jpg">
   <div class="card-content">
@@ -80,7 +80,7 @@
 </div>
 
 <!-- Vegan Recipes -->
-<div class="recipe-card" data-id="4">
+<div class="recipe-card" data-id="4" data-category="vegan">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://tse1.mm.bing.net/th?id=OIP.Nfox9puePw82_7xThqXJ7QHaHa&pid=Api&P=0&h=220" alt="Chickpea Salad">
   <div class="card-content">
@@ -92,7 +92,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="5">
+<div class="recipe-card" data-id="5" data-category="vegan">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://fullofplants.com/wp-content/uploads/2022/03/easy-vegan-pad-thai-noodle-dish-with-bean-sprouts-thumb.jpg" alt="Vegan Pad Thai">
   <div class="card-content">
@@ -104,7 +104,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="6">
+<div class="recipe-card" data-id="6" data-category="vegan">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://tse4.mm.bing.net/th?id=OIP.MrLTZMckIv1TFkfh43AN8gHaJ4&pid=Api&P=0&h=220" alt="Stuffed Bell Peppers">
   <div class="card-content">
@@ -118,7 +118,7 @@
 </div>
 
 <!-- Quick Meals -->
-<div class="recipe-card" data-id="7">
+<div class="recipe-card" data-id="7" data-category="quick-meals">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://realhousemoms.com/wp-content/uploads/Ramen-Noodle-Stir-Fry-IG.jpg" alt="Instant Ramen Stir Fry">
   <div class="card-content">
@@ -130,7 +130,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="8">
+<div class="recipe-card" data-id="8" data-category="quick-meals">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/egg-fried-rice-recipe.jpg" alt="Egg Fried Rice">
   <div class="card-content">
@@ -142,7 +142,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="9">
+<div class="recipe-card" data-id="9" data-category="quick-meals">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://th.bing.com/th/id/OIP.3jAw0R5b4UGUDZS6nityuAHaE8?rs=1&pid=ImgDetMain" alt="Grilled Cheese Sandwich">
   <div class="card-content">
@@ -155,8 +155,8 @@
   </div>
 </div>
 
-<!-- Indian Recipes -->
-<div class="recipe-card" data-id="10">
+<!-- Dessert Recipes -->
+<div class="recipe-card" data-id="10" data-category="dessert indian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://th.bing.com/th/id/OIP.B32bansRI7RS3yfbUSEBNwHaHa?rs=1&pid=ImgDetMain" alt="Gulab Jamun">
   <div class="card-content">
@@ -168,7 +168,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="11">
+<div class="recipe-card" data-id="11" data-category="dessert">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://bing.com/th?id=OSK.22e35e6896601da85dfe55568476266e" alt="Chocolate Lava Cake">
   <div class="card-content">
@@ -180,7 +180,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="12">
+<div class="recipe-card" data-id="12" data-category="dessert indian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://imgs.search.brave.com/rJTIQD_R_CPBQItbd-CWAxliiWNuCiCodrvLy0Lxiy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzk1LzE0LzQz/LzM2MF9GXzEyOTUx/NDQzNzhfZ3Bqc3Ni/RkE4azN4QTVKYjJK/M1B4a21jMHJ1c3Fl/dmEuanBn" alt="Rasgulla">
   <div class="card-content">
@@ -194,7 +194,7 @@
 </div>
 
 <!-- Italian Recipes -->
-<div class="recipe-card" data-id="13">
+<div class="recipe-card" data-id="13" data-category="italian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://th.bing.com/th/id/OIP.1Xr2OkJdpGuaysQAOtn5YgHaLH?rs=1&pid=ImgDetMain" alt="Margherita Pizza">
   <div class="card-content">
@@ -206,7 +206,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="14">
+<div class="recipe-card" data-id="14" data-category="italian">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://bing.com/th?id=OSK.f5678246b6267f21e4669407c4dd7053" alt="Pasta Alfredo">
   <div class="card-content">
@@ -218,7 +218,7 @@
     <button class="view-recipe">View Recipe</button>
   </div>
 </div>
-<div class="recipe-card" data-id="15">
+<div class="recipe-card" data-id="15" data-category="italian dessert">
   <div class="paper-clip"></div>
   <img class="recipe-image" src="https://natashaskitchen.com/wp-content/uploads/2019/11/Tiramisu-Cake-5.jpg" alt="Tiramisu">
   <div class="card-content">
@@ -234,6 +234,8 @@
   </div>
 
   <!-- Recipe Detail Modal -->
+
+  
   <div class="recipe-modal" id="recipeModal">
     <div class="modal-content">
       <div class="modal-header">
@@ -276,6 +278,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <!-- Add JavaScript at the end of the body -->
   <script src="script.js"></script>
