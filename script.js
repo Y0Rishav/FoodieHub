@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const recipes = {
         1: {
             title: "Rajma Chawal",
-            image: "/api/placeholder/900/500",
+            image: "https://th.bing.com/th/id/OIP.D6vSLSOGd8OR4ak510OE3QHaE6?w=283&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7",
             prepTime: "20 mins",
             cookTime: "40 mins",
             servings: 4,
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         2: {
             title: "Palak Paneer",
-            image: "/api/placeholder/900/500",
+            image: "https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-featured.jpg",
             prepTime: "15 mins",
             cookTime: "25 mins",
             servings: 4,
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         3: {
             title: "Chole Bhature",
-            image: "/api/placeholder/900/500",
+            image: "https://3.bp.blogspot.com/-uck7Fi_bRfw/UA7ogu0DrzI/AAAAAAAARSI/rmu9iluFJG0/s1600/cb+ten.jpg",
             prepTime: "20 mins",
             cookTime: "30 mins",
             servings: 4,
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         4: {
             title: "Chickpea Salad",
-            image: "/api/placeholder/900/500",
+            image: "https://tse1.mm.bing.net/th?id=OIP.Nfox9puePw82_7xThqXJ7QHaHa&pid=Api&P=0&h=220",
             prepTime: "10 mins",
             cookTime: "0 mins",
             servings: 2,
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         5: {
             title: "Vegan Pad Thai",
-            image: "/api/placeholder/900/500",
+            image: "https://fullofplants.com/wp-content/uploads/2022/03/easy-vegan-pad-thai-noodle-dish-with-bean-sprouts-thumb.jpg",
             prepTime: "15 mins",
             cookTime: "15 mins",
             servings: 2,
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         6: {
             title: "Stuffed Bell Peppers",
-            image: "/api/placeholder/900/500",
+            image: "https://tse4.mm.bing.net/th?id=OIP.MrLTZMckIv1TFkfh43AN8gHaJ4&pid=Api&P=0&h=220",
             prepTime: "20 mins",
             cookTime: "25 mins",
             servings: 3,
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         7: {
             title: "Instant Ramen Stir Fry",
-            image: "/api/placeholder/900/500",
+            image: "https://realhousemoms.com/wp-content/uploads/Ramen-Noodle-Stir-Fry-IG.jpg",
             prepTime: "5 mins",
             cookTime: "10 mins",
             servings: 1,
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         8: {
             title: "Egg Fried Rice",
-            image: "/api/placeholder/900/500",
+            image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/egg-fried-rice-recipe.jpg",
             prepTime: "10 mins",
             cookTime: "15 mins",
             servings: 2,
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         9: {
             title: "Grilled Cheese Sandwich",
-            image: "/api/placeholder/900/500",
+            image: "https://th.bing.com/th/id/OIP.3jAw0R5b4UGUDZS6nityuAHaE8?rs=1&pid=ImgDetMain",
             prepTime: "5 mins",
             cookTime: "10 mins",
             servings: 1,
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         10: {
             title: "Gulab Jamun",
-            image: "/api/placeholder/900/500",
+            image: "https://th.bing.com/th/id/OIP.B32bansRI7RS3yfbUSEBNwHaHa?rs=1&pid=ImgDetMain",
             prepTime: "15 mins",
             cookTime: "25 mins",
             servings: 6,
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         11: {
             title: "Chocolate Lava Cake",
-            image: "/api/placeholder/900/500",
+            image: "https://bing.com/th?id=OSK.22e35e6896601da85dfe55568476266e",
             prepTime: "10 mins",
             cookTime: "12 mins",
             servings: 2,
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         12: {
             title: "Rasgulla",
-            image: "/api/placeholder/900/500",
+            image: "https://imgs.search.brave.com/rJTIQD_R_CPBQItbd-CWAxliiWNuCiCodrvLy0Lxiy0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzk1LzE0LzQz/LzM2MF9GXzEyOTUx/NDQzNzhfZ3Bqc3Ni/RkE4azN4QTVKYjJK/M1B4a21jMHJ1c3Fl/dmEuanBn",
             prepTime: "20 mins",
             cookTime: "30 mins",
             servings: 6,
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         13: {
             title: "Margherita Pizza",
-            image: "/api/placeholder/900/500",
+            image: "https://th.bing.com/th/id/OIP.1Xr2OkJdpGuaysQAOtn5YgHaLH?rs=1&pid=ImgDetMain",
             prepTime: "20 mins",
             cookTime: "15 mins",
             servings: 2,
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         14: {
             title: "Pasta Alfredo",
-            image: "/api/placeholder/900/500",
+            image: "https://bing.com/th?id=OSK.f5678246b6267f21e4669407c4dd7053",
             prepTime: "10 mins",
             cookTime: "15 mins",
             servings: 2,
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         15: {
             title: "Tiramisu",
-            image: "/api/placeholder/900/500",
+            image: "https://natashaskitchen.com/wp-content/uploads/2019/11/Tiramisu-Cake-5.jpg",
             prepTime: "25 mins",
             cookTime: "0 mins",
             servings: 4,
