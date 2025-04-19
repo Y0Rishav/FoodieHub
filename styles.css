@@ -677,7 +677,7 @@ footer {
   opacity: 0.8;
 }
 
-/* Media Queries */
+
 @media (max-width: 992px) {
   .welcome-content {
     flex-direction: column;
@@ -734,3 +734,4 @@ footer {
     font-size: 1.7rem;
   }
 }
+
