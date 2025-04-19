@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieHub - Vintage Recipe Finder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!-- Corner Decorations -->
+  <div class="corner-decoration corner-top-left"></div>
+  <div class="corner-decoration corner-top-right"></div>
+  <div class="corner-decoration corner-bottom-left"></div>
+  <div class="corner-decoration corner-bottom-right"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">Foodie<span>Hub</span></h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for recipes...">
+        <span class="search-icon">🔎</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories -->
+  <div class="categories">
+    <button class="category-btn active">All Recipes</button>
+    <button class="category-btn">Vegan</button>
+    <button class="category-btn">Dessert</button>
+    <button class="category-btn">Quick Meals</button>
+    <button class="category-btn">Indian</button>
+    <button class="category-btn">Italian</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <div class="recipe-grid">
+      <!-- Recipe Card 1 -->
+      <div class="recipe-card" data-id="1">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Classic Margherita Pizza">
+        <div class="card-content">
+          <h3 class="recipe-title">Classic Margherita Pizza</h3>
+          <div class="recipe-info">
+            <span>⏱️ 30 mins</span>
+            <span>⭐ 4.8</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+
+      <!-- Recipe Card 2 -->
+      <div class="recipe-card" data-id="2">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Vegetable Curry">
+        <div class="card-content">
+          <h3 class="recipe-title">Spicy Vegetable Curry</h3>
+          <div class="recipe-info">
+            <span>⏱️ 45 mins</span>
+            <span>⭐ 4.5</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+
+      <!-- Recipe Card 3 -->
+      <div class="recipe-card" data-id="3">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Chocolate Brownies">
+        <div class="card-content">
+          <h3 class="recipe-title">Fudgy Chocolate Brownies</h3>
+          <div class="recipe-info">
+            <span>⏱️ 40 mins</span>
+            <span>⭐ 4.9</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+
+      <!-- Recipe Card 4 -->
+      <div class="recipe-card" data-id="4">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Avocado Toast">
+        <div class="card-content">
+          <h3 class="recipe-title">Avocado Toast Supreme</h3>
+          <div class="recipe-info">
+            <span>⏱️ 15 mins</span>
+            <span>⭐ 4.3</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+
+      <!-- Recipe Card 5 -->
+      <div class="recipe-card" data-id="5">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Spaghetti Carbonara">
+        <div class="card-content">
+          <h3 class="recipe-title">Classic Spaghetti Carbonara</h3>
+          <div class="recipe-info">
+            <span>⏱️ 25 mins</span>
+            <span>⭐ 4.7</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+
+      <!-- Recipe Card 6 -->
+      <div class="recipe-card" data-id="6">
+        <div class="paper-clip"></div>
+        <img class="recipe-image" src="/api/placeholder/400/320" alt="Vegan Buddha Bowl">
+        <div class="card-content">
+          <h3 class="recipe-title">Vegan Buddha Bowl</h3>
+          <div class="recipe-info">
+            <span>⏱️ 35 mins</span>
+            <span>⭐ 4.6</span>
+          </div>
+          <button class="view-recipe">View Recipe</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recipe Detail Modal -->
+  <div class="recipe-modal" id="recipeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-close">✕</div>
+        <img class="modal-recipe-image" src="/api/placeholder/900/500" alt="Recipe Image">
+        <h2 class="modal-recipe-title">Recipe Title</h2>
+      </div>
+      <div class="modal-body">
+        <div class="recipe-details">
+          <div class="detail-item">
+            <span>Prep Time</span>
+            <span id="prepTime">30 mins</span>
+          </div>
+          <div class="detail-item">
+            <span>Cook Time</span>
+            <span id="cookTime">45 mins</span>
+          </div>
+          <div class="detail-item">
+            <span>Servings</span>
+            <span id="servings">4</span>
+          </div>
+          <div class="detail-item">
+            <span>Difficulty</span>
+            <span id="difficulty">Medium</span>
+          </div>
+          <div class="detail-item">
+            <span>Rating</span>
+            <span id="rating">⭐ 4.8</span>
+          </div>
+        </div>
+
+        <div class="recipe-section">
+          <h3 class="section-title">Ingredients</h3>
+          <div class="notebook-paper">
+            <ul class="ingredients-list" id="ingredientsList">
+              <!-- Ingredients will be loaded here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add JavaScript at the end of the body -->
+  <script src="script.js"></script>
+</body>
+</html>
